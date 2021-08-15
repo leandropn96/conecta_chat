@@ -11,8 +11,8 @@ var bodyParser = require('body-parser')
 var app = express()
 
 //Setar as variavesi 'views engine' e 'views' do express
-app.set('views engine','ejs');
-app.set('views', './app/views')
+app.set('view engine', 'ejs')
+app.set('views', './app/view')
 
 //Configuração do middleware express.static
 app.use(express.static('./app/public'))
